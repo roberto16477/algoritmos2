@@ -13,3 +13,6 @@ print(v[x*4])
 print(v[x*1])
 print(v[x*2])
 print(v[x*3])
+
+print("Mais elaborados:")
+print(v[v[x+y]]) # está pegando a posição 1 do vetor pois o valor na posição 6 é 1
