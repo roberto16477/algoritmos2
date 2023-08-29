@@ -1,9 +1,9 @@
-n = 9
+n = 5
 v = []
 v2 = []
 v3 = []
 
-for num in range(5):
+for num in range(n):
     valor = int(input("Digite um número: "))
     v.append(valor)
 
