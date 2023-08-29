@@ -1,8 +1,9 @@
 n = 9
 v = []
 v2 = []
+v3 = []
 
-for num in range(9):
+for num in range(5):
     valor = int(input("Digite um número: "))
     v.append(valor)
 
@@ -13,5 +14,7 @@ for i in range(n):
             mult += 1
     if mult == 0:
         v2.append(i)
+        v3.append(v[i])
 
-print(v2)
+print("as posições são: ", v2)
+print("Os valores são: ", v3)
