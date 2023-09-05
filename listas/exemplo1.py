@@ -14,4 +14,4 @@ while x < 5:
     x+=1
 print(f"media: {soma/ x:5.2f}")
 
-print(type(notas8))
+print(type(notas))
