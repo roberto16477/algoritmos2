@@ -1,13 +1,13 @@
-a = [1]
-i = 0
+a = []
+n = 1
 
-while a[i] != 0:
+while n != 0:
     n = (int(input("Digite um numero: ")))
     if n == 0:
         break
     else:
-        a.append(n)
-    i = i+1
+        a.append(n) #inserindo dados em um array vazio.
+    
 
 
 print(a)
