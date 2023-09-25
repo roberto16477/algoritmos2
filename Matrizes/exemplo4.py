@@ -1,6 +1,6 @@
 M = []
 N = 3
-
+#preenche sem numpy
 for i in range(N):
     lista = []
     for j in range(N):
