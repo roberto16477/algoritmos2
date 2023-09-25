@@ -11,7 +11,7 @@ for l in range(N):
 
 print("Matriz Original:")
 for num in M:
-        print(num)
+    print(num)
 
 for i in range(N):
     auxl = M[2][i]
@@ -26,4 +26,5 @@ for i in range(N):
 print("Alterada: ")
 
 for valor in M:
-     print(valor)
+    print(valor)
+
