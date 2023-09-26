@@ -1,7 +1,7 @@
 import numpy as np
 
 V = []
-N = 5
+N = 25
 inverso = np.zeros(N)
 
 for i in range(N):
@@ -12,7 +12,4 @@ for j in range(N):
     inverso[aux] = int(V[j]-2*V[j])
     
 
-
-
-print(V)
 print(inverso)
