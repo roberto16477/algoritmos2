@@ -1,5 +1,5 @@
 X = []
-N = 10
+N = 100
 cont = 0
 contimp = 0
 soma = 0
