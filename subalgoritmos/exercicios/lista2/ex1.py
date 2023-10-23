@@ -1,7 +1,8 @@
-def recur(n : int):
-    if n > 0:
-        print(n)
-        return n * recur(n-1)
+def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n-1)
     
-
-recur(10)
+a = 10
+print(fatorial(a))
