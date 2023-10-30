@@ -3,6 +3,7 @@ FINAL = 100
 V = []
 primo = False
 primosmilhao = []
+cont = 0
 
 for j in range (INICIO, FINAL+1):
     mult = 0
@@ -26,7 +27,9 @@ for k in range(inicio2, final2+1):
             primo = True
     if primo == True:
         primosmilhao.append(k)
+        cont += 1
     
 
 print("Os primos de 0 a 100 são: ", V)
 print("Os primos no intervalo informado são:", primosmilhao)
+print("Existem", cont, "números primos no intervalo selecionado!")
