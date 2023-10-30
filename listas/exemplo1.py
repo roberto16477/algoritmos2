@@ -13,5 +13,5 @@ while x < 5:
     print(f"nota {x} : {notas[x]:6.2f}")
     x+=1
 print(f"media: {soma/ x:5.2f}")
-#aa
+
 print(type(notas))
