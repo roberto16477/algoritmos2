@@ -28,10 +28,5 @@ for k in range(inicio2, final2+1):
         primosmilhao.append(k)
     
 
-print(V)
-print(primosmilhao)
-
-
-        
-
-
+print("Os primos de 0 a 100 são: ", V)
+print("Os primos no intervalo informado são:", primosmilhao)
