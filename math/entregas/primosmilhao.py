@@ -14,8 +14,8 @@ for j in range (INICIO, FINAL+1):
     if mult == 0:
         V.append(j)
 
-inicio2 = 100
-final2 = 10000
+inicio2 = int(input("Informe o inicio do intervalo: "))
+final2 = int(input("Informe o final do intervalo: "))
 
 for k in range(inicio2, final2+1):
     primo = False
@@ -32,4 +32,4 @@ for k in range(inicio2, final2+1):
 
 print("Os primos de 0 a 100 são: ", V)
 print("Os primos no intervalo informado são:", primosmilhao)
-print("Existem", cont, "números primos entre 100 e 10.000")
+print("Existem", cont, "números primos no intervalo selecionado!")
