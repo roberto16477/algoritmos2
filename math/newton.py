@@ -9,6 +9,6 @@ def calcular_raiz_quadrada(numero, precisao=1e-6):
     return aproximacao
 
 
-numero = float(input("Insira um número para calcular a raiz quadrada: "))  # Número para calcular a raiz quadrada
-raiz_quadrada = calcular_raiz_quadrada(numero)
-print(f"A raiz quadrada de {numero} é aproximadamente {raiz_quadrada:.6f}")
+num = float(input("Insira um número para calcular a raiz quadrada: "))  # Número para calcular a raiz quadrada
+raiz_quadrada = calcular_raiz_quadrada(num)
+print(f"A raiz quadrada de {num} é aproximadamente {raiz_quadrada:.6f}")
