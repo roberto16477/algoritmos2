@@ -2,6 +2,7 @@ qualquer = int(input("Informe o número de parada: "))
 Divisores = []
 V = []
 primo = False
+cont = 0
 
 raiz = qualquer**0.5
 
@@ -9,22 +10,23 @@ RaizInteira = int(raiz)
 
 for j in range (2, RaizInteira+1):
     mult = 0
-    for i in range(3, j):
+    for i in range(2, j):
         if j % i == 0:
             mult +=1
             break
     if mult == 0:
         V.append(j)
 
+print(V)
+
 for l in V:
     if qualquer % l == 0:
         Divisores.append(l)
-        primo = False
-    else:
-        primo = True
-        break
+        cont += 1
 
-if primo == False:
+print("A raiz inteira é: ",RaizInteira)
+
+if cont > 0:
     print("O número", qualquer, "não é primo pois é divisivel por:")
     print(Divisores)
 else:
