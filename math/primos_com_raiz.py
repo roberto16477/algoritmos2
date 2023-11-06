@@ -17,7 +17,7 @@ for j in range (2, RaizInteira+1):
     if mult == 0:
         V.append(j)
 
-print(V)
+print("Os primos até a raiz inteira é: ", V)
 
 for l in V:
     if qualquer % l == 0:
