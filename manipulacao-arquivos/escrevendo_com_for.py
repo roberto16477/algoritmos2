@@ -3,4 +3,4 @@ arquivo = open("manipulacao-arquivos/textos/variaslinhas.txt", "w", encoding="ut
 for linha in range(1, 101):
     arquivo.write(linha)
 
-arquivo.close
+arquivo.close()
