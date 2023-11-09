@@ -1,4 +1,4 @@
-arquivo = open("manipulacao-arquivos/nome.txt", "w")
+arquivo = open("manipulacao-arquivos/nome.txt", "w", encoding="utf-8")
 
 nome = input("Informe o nome a ser escrito: ")
 
