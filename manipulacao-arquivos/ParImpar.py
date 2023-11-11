@@ -6,3 +6,4 @@ with open ("manipulacao-arquivos/textos/impares.txt", "w", encoding="utf-8") as 
                 pares.write(f"{i}\n")
             else:
                 impares.write(f"{i}\n")
+                
