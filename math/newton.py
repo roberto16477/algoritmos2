@@ -12,7 +12,7 @@ def calcular_raiz_quadrada(numero, precisao=1e-6):
 
 
 num = float(input("Insira um número para calcular a raiz quadrada: "))
-elevado = num**12
+elevado = num**10
 raiz_quadrada = calcular_raiz_quadrada(elevado)
 print(f"A raiz quadrada de {elevado} é aproximadamente {raiz_quadrada:.6f}")
 
