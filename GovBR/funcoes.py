@@ -19,5 +19,7 @@ def ConsultaDominio(dominio):
             if busca in linha:
                 print(f"O domínio {busca} já existe!")
                 print(linha)
+                break
             else:
                 print(f"O domínio {busca} está disponível!")
+                break
