@@ -16,10 +16,9 @@ def ConsultaDominio(dominio):
         busca = (dominio + ".gov.br")
 
         for linha in todos:
-            if busca in linha:
+            if busca not in linha:
                 print(f"O domínio {busca} já existe!")
                 print(linha)
-                break
             else:
                 print(f"O domínio {busca} está disponível!")
                 break
