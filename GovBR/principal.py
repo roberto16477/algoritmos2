@@ -6,9 +6,7 @@ repetir = 0
 
 while opcao != 0:
     if cont >= 1:
-        print("Informe 1 para SIM")
-        print("Informe 2 para NÃO")
-        repetir = int(input("Deseja repetir a operação?"))
+        repetir = int(input("Deseja repetir a operação? (informe 1 para SIM ou 2 para NÃO)"))
         
     if repetir != 1:
         print("Informe 0 para sair")
