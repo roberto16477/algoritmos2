@@ -6,7 +6,7 @@ def ContaLinhas():
         for linha in contagem:
             cont += 1
         
-        print("O arquivo dominios.csv possui ", cont, "linhas")
+        print("\nO arquivo dominios.csv possui ", cont, "linhas")
         print("Com as colunas:")
         print(Colunas())
 

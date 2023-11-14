@@ -9,7 +9,7 @@ while opcao != 0:
         repetir = int(input("Deseja repetir a operação? (informe 1 para SIM ou 2 para NÃO)"))
         
     if repetir != 1:
-        print("Informe 0 para sair")
+        print("\nInforme 0 para sair")
         print("Informe 1 para verificar o número de registros do arquivo dominios.csv e quais suas colunas")
         print("Informe 3 para procurar por domínios relacionados a uma palavra específica")
         print("Informe 5 para consultar a disponibilidade de um domínio")
@@ -30,4 +30,4 @@ while opcao != 0:
 
     cont += 1
 
-print("Fim da execução")
+print("\nFim da execução")
