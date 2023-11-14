@@ -9,6 +9,8 @@ def AgrupaPorPalavra(palavra):
         if informacao in linha:
             print(colunas[1])
 
+
+
 def ConsultaDominio(dominio):
     with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
