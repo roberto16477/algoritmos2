@@ -24,7 +24,7 @@ while opcao != 0:
         AgrupaPorPalavra(busca)
 
     if opcao == 5:
-        busca = input("\nInforme um domínio que deseja consultar do .gov.br")
+        busca = input("\nInforme um domínio que deseja consultar do .gov.br: ")
 
         ConsultaDominio(busca)
 

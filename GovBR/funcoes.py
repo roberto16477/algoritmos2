@@ -22,6 +22,7 @@ def Colunas():
 def AgrupaPorPalavra(palavra):
     with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
+        existe = 0
 
     informacao = palavra
 
@@ -29,6 +30,10 @@ def AgrupaPorPalavra(palavra):
         colunas = linha.split('|')
         if informacao in linha:
             print(colunas[1])
+            existe += 1
+        
+    if existe < 1:
+        print("Não existem domínios com a palavra: ", palavra)
 
 
 
