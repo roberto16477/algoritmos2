@@ -10,9 +10,13 @@ while opcao != 0:
         
     if repetir != 1:
         print("Informe 0 para sair")
+        print("Informe 1 para verificar o número de registros do arquivo dominios.csv e quais suas colunas")
         print("Informe 3 para procurar por domínios relacionados a uma palavra específica")
         print("Informe 5 para consultar a disponibilidade de um domínio")
         opcao = int(input("Informe o número da operação que deseja: "))
+
+    if opcao == 1:
+        ContaLinhas()
 
     if opcao == 3:
         busca = input("\nInforme uma palavra para verificar seus domínios: ")
