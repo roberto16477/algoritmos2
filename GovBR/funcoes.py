@@ -1,3 +1,24 @@
+def ContaLinhas():
+    with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
+        contagem = dominios.readlines()
+        cont = 0
+
+        for linha in contagem:
+            cont += 1
+        
+        print("O arquivo dominios.csv possui ", cont, "linhas")
+        print("Com as colunas:")
+        print(Colunas())
+
+        
+
+def Colunas():
+    with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
+        cabecalho = dominios.readline()
+        return(cabecalho)
+
+
+
 def AgrupaPorPalavra(palavra):
     with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
