@@ -14,11 +14,15 @@ def ConsultaDominio(dominio):
         todos = dominios.readlines()
 
         busca = (dominio + ".gov.br")
+        existe = 0
 
         for linha in todos:
-            if busca not in linha:
+            if busca in linha:
                 print(f"O domínio {busca} já existe!")
                 print(linha)
-            else:
-                print(f"O domínio {busca} está disponível!")
-                break
+                existe += 1
+        
+        if existe < 1:
+            print(f"O domínio {busca} está livre!")
+
+           
