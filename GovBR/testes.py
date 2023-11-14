@@ -1,3 +1,1 @@
-from funcoes import *
-
-ContaLinhas()
+print("Arquivo para teste das funções")
