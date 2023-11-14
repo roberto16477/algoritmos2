@@ -15,12 +15,12 @@ while opcao != 0:
         opcao = int(input("Informe o número da operação que deseja: "))
 
     if opcao == 3:
-        busca = input("Informe uma palavra para verificar seus domínios: ")
+        busca = input("\nInforme uma palavra para verificar seus domínios: ")
 
         AgrupaPorPalavra(busca)
 
     if opcao == 5:
-        busca = input("Informe um domínio que deseja consultar do .gov.br")
+        busca = input("\nInforme um domínio que deseja consultar do .gov.br")
 
         ConsultaDominio(busca)
 
