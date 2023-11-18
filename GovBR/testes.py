@@ -1,1 +1,3 @@
-print("Arquivo para teste das funções")
+from funcoes import RegistrosHandle
+
+RegistrosHandle()

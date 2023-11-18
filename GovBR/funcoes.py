@@ -54,3 +54,30 @@ def ConsultaDominio(dominio):
             print(f"O domínio {busca} está livre!")
 
            
+def RegistrosHandle():
+    regh = []
+    with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
+        todos = dominios.readlines()
+
+        for linha in todos:
+            colunas = linha.split('|')
+
+            if colunas[3] not in regh:
+                regh.append(colunas[3])
+                with open("GovBR/opcoes_handle.txt", "a", encoding="utf-8") as opcoeshandle:
+                    opcoeshandle.write(f"{colunas[3]}\n")
+
+            if colunas[4] not in regh:
+                regh.append(colunas[4])
+                with open("GovBR/opcoes_handle.txt", "a", encoding="utf-8") as opcoeshandle:
+                    opcoeshandle.write(f"{colunas[4]}\n")
+
+            if colunas[5] not in regh:
+                regh.append(colunas[5])
+                with open("GovBR/opcoes_handle.txt", "a", encoding="utf-8") as opcoeshandle:
+                    opcoeshandle.write(f"{colunas[5]}\n")
+
+        print("Foi gerado o arquivo opcoes_handle.txt com todas as opções usadas nas colunas Handle")
+
+
+
