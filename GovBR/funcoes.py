@@ -10,6 +10,23 @@ def ContaLinhas():
         print("Com as colunas:")
         print(Colunas())
 
+
+
+def AnoCadastro():
+    with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
+        todos = dominios.readlines()
+        nomearq = input("Informe o nome que o arquivo deverá ter: ")
+        anobusca = input("Informe o ano para ver todos os domínios .gov.br criados no ano informado")
+
+        with open(f"GovBR/{nomearq}.txt", "w", encoding="utf-8") as allyear:
+            for linha in todos:
+                colunas = linha.split('|')
+                if anobusca in colunas[7]:
+                    allyear.write(linha)
+            print(f"foi criado o arquivo{nomearq}.txt com todos os domínios cadastrados no ano de {anobusca}")
+
+            
+
         
 
 def Colunas():
