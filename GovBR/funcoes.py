@@ -46,7 +46,7 @@ def ConsultaDominio(dominio):
 
         for linha in todos:
             if busca in linha:
-                print(f"O domínio {busca} já existe!")
+                print(f"\nO domínio {busca} já existe!")
                 print(linha)
                 existe += 1
         
