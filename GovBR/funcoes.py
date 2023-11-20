@@ -1,12 +1,12 @@
-def ContaLinhas():
-    with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
+def ContaLinhas(nome):
+    with open(f"GovBR/{nome}", "r", encoding="utf-8") as dominios:
         contagem = dominios.readlines()
         cont = 0
 
         for linha in contagem:
             cont += 1
         
-        print("\nO arquivo dominios.csv possui ", cont, "linhas")
+        print(f"\nO arquivo {nome} possui {cont} linhas")
         print("Com as colunas:")
         print(Colunas())
 
@@ -24,6 +24,14 @@ def AnoCadastro():
                 if anobusca in colunas[7]:
                     allyear.write(linha)
             print(f"foi criado o arquivo{nomearq}.txt com todos os domínios cadastrados no ano de {anobusca}")
+    
+    resposta = 0
+    while (resposta > 2) or (resposta < 1):
+        print("\nDeseja obter mais informações sobre o arquivo?")
+        resposta = int(input("digite 1 para SIM ou 2 para NÃO"))
+
+    if resposta == 1:
+        ContaLinhas(f"{nomearq}.txt")
 
             
 

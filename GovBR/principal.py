@@ -11,6 +11,7 @@ while opcao != 0:
     if repetir == 2:
         print("\nInforme 0 para sair")
         print("Informe 1 para verificar o número de registros do arquivo dominios.csv e quais suas colunas")
+        print("Informe 2 para verificar todos os cadastros de um ano específico")
         print("Informe 3 para procurar por domínios relacionados a uma palavra específica")
         print("Informe 5 para consultar a disponibilidade de um domínio")
         print("Informe 6 para gerar um arquivo txt com as opções já cadastradas nas colunas handle")
@@ -21,7 +22,7 @@ while opcao != 0:
         print("\n******************   Operação inválida!   ******************")
 
     if opcao == 1:
-        ContaLinhas()
+        ContaLinhas("dominios.csv")
     elif opcao == 2:
         AnoCadastro()
 
