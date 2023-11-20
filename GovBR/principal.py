@@ -22,6 +22,8 @@ while opcao != 0:
 
     if opcao == 1:
         ContaLinhas()
+    elif opcao == 2:
+        AnoCadastro()
 
     if opcao == 3:
         busca = input("\nInforme uma palavra para verificar seus domínios: ")
