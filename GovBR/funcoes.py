@@ -34,7 +34,6 @@ def AnoCadastro():
         ContaLinhas(f"{nomearq}.txt")
 
             
-
         
 
 def Colunas():
@@ -59,6 +58,31 @@ def AgrupaPorPalavra(palavra):
         
     if existe < 1:
         print("Não existem domínios com a palavra: ", palavra)
+
+
+
+def estatisticas(anoinicio, anofim):
+    with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
+        todos = dominios.readlines()
+        anosv = []
+
+        for ano in range(anoinicio, anofim + 1):
+            anostr = str(ano)
+            for linha in todos:
+                colunas = linha.split('|')
+
+                if anostr in colunas[7]:
+                    anosv.append(ano)
+        
+        soma = 0
+
+        for ano2 in range(anoinicio, anofim):
+            segundo = anosv.count(ano2)
+            soma = soma + segundo
+            divisor = (anofim - anoinicio)
+            media = (soma / 2)
+
+    print(media)
 
 
 

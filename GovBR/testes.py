@@ -1,3 +1,3 @@
-from funcoes import AnoCadastro
+from funcoes import estatisticas
 
-AnoCadastro()
+estatisticas(2019,2020)
