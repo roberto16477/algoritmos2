@@ -1,3 +1,3 @@
-from funcoes import AnoCadastro
+from funcoes import RegistrosHandle
 
-AnoCadastro()
+RegistrosHandle()
