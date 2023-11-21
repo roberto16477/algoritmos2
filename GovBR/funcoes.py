@@ -15,7 +15,7 @@ def ContaLinhas(nome):
 def AnoCadastro():
     with open("GovBR/dominios.csv", "r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
-        nomearq = input("Informe o nome que o arquivo deverá ter: ")
+        nomearq = input("\nInforme o nome que o arquivo deverá ter: ")
         anobusca = input("Informe o ano para ver todos os domínios .gov.br criados no ano informado")
 
         with open(f"GovBR/{nomearq}.txt", "w", encoding="utf-8") as allyear:
@@ -65,6 +65,8 @@ def estatisticas(anoinicio, anofim):
     with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
         anosv = []
+        maiorreg = 0
+        menorreg = 0
 
         for ano in range(anoinicio, anofim + 1):
             anostr = str(ano)
@@ -76,13 +78,19 @@ def estatisticas(anoinicio, anofim):
         
         soma = 0
 
-        for ano2 in range(anoinicio, anofim):
+        for ano2 in range(anoinicio, anofim +1):
             segundo = anosv.count(ano2)
             soma = soma + segundo
-            divisor = (anofim - anoinicio)
-            media = (soma / 2)
+            divisor = (anofim - anoinicio) + 1
+        
+        d = {i: anosv.count(i) for i in set(anosv)}
+        maiorreg = max(d, key=d.get)
+        menorreg = min(d, key=d.get)
+        media = (soma / divisor)
 
-    print(media)
+    print("A média de cadastros por ano é: ", media)
+    print("O ano com mais cadastros é: ", maiorreg)
+    print("O ano com menos cadastros é: ", menorreg)
 
 
 
