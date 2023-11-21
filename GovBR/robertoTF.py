@@ -1,5 +1,5 @@
 #
-from funcoes import *
+from funcoes import ContaLinhas, AnoCadastro, AgrupaPorPalavra, estatisticas, ConsultaDominio, RegistrosHandle
 
 opcao = 30
 cont = 0
