@@ -12,7 +12,7 @@ while opcao != 0:
     if repetir == 2:
         print("\nInforme 0 para sair")
         print("Informe 1 para verificar o número de registros do arquivo dominios.csv e quais suas colunas")
-        print("Informe 2 para verificar todos os cadastros de um ano específico")
+        print("Informe 2 para gerar um arquivo txt com todos os cadastros de um ano específico")
         print("Informe 3 para procurar por domínios relacionados a uma palavra específica")
         print("Informe 4 para ver as estatísticas de um período específico")
         print("Informe 5 para consultar a disponibilidade de um domínio")
