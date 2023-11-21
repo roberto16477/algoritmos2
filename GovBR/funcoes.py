@@ -48,7 +48,7 @@ def AgrupaPorPalavra(palavra):
         todos = dominios.readlines()
         existe = 0
 
-    informacao = palavra
+    informacao = palavra.lower()
 
     for linha in todos:
         colunas = linha.split('|')
@@ -90,7 +90,7 @@ def ConsultaDominio(dominio):
     with open("GovBR/dominios.csv","r", encoding="utf-8") as dominios:
         todos = dominios.readlines()
 
-        busca = (dominio + ".gov.br")
+        busca = (dominio.lower() + ".gov.br")
         existe = 0
 
         for linha in todos:
