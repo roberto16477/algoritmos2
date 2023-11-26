@@ -1,6 +1,5 @@
 numinicial = int(input("Informe o inicio do intervalo: "))
 numfinal = int(input("Informe o final do intervalo: "))
-Divisores = []
 primosintervalo = []
 V = []
 primo = False
@@ -19,7 +18,6 @@ for j in range (2, RaizInteira+1):
     if mult == 0:
         V.append(j)
 
-print("Os primos até a raiz inteira é: ", V)
 
 for k in range(numinicial, numfinal+1):
     primo = False
@@ -33,6 +31,6 @@ for k in range(numinicial, numfinal+1):
         primosintervalo.append(k)
         cont += 1
     
-
 print("Os primos no intervalo informado são:", primosintervalo)
+print(f"A raiz inteira de {numfinal} é {RaizInteira}")
 print("Existem", cont, "números primos no intervalo selecionado!")
