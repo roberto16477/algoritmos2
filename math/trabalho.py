@@ -1,3 +1,7 @@
+#Roberto Carlos da Silva Junior  -  BSI23
+#O código exibe todos os primos encontrados em um intervalo informado pelo usuário,
+# usando o método de encontrar todos os primos até a raiz inteira do ultimo numero do intervalo
+
 numinicial = int(input("Informe o inicio do intervalo: "))
 numfinal = int(input("Informe o final do intervalo: "))
 primosintervalo = []
