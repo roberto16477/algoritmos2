@@ -16,6 +16,6 @@ for k in range(n):
 
 produtoescalar = sum(V3)
 
-print("O vetor 1 é: ", V1)
+print("\nO vetor 1 é: ", V1)
 print("O vetor 2 é: ",V2)
 print("O produto escalar é: ", produtoescalar)
