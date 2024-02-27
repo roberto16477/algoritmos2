@@ -12,4 +12,5 @@ for i in range(N):
             lista.append((4*i**3)+(5*j**2)+(1))
     M.append(lista)
 
-print(M)
+for x in M:
+    print(x)
