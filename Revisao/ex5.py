@@ -5,7 +5,7 @@ for i in range(N):
     lista = []
     for j in range(N):
         if i == j:
-            lista.append(3*i**2)
+            lista.append(3*(i**2))
         elif i < j:
             lista.append((2*i)+(7*j))
         else:
