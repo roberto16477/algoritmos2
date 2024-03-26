@@ -1,18 +1,28 @@
 from funcfilas import *
 
+opcao = -1
 lista = []
 n = int(input("Quantos valores terá a lista? "))
 inserir(n, lista)
 
-tirar = input("Informe um valor para ser removido da lista: ")
-remover(tirar, lista)
+while opcao != 0:
+    print("\nInforme 0 para sair")
+    print("Informe 1 para inserir na fila")
+    print("Informe 2 para remover da lista")
+    print("Informe 3 para consultar um valor na fila")
+    opcao = int(input("Informe o número da operação que deseja: "))
 
 
+    if opcao == 1:
+        
+        inserir(n, lista)
 
-VC = input("Informe o valor que deseja consultar: ") # VC = Valor Consulta
-if consulta in lista:
-    print(f"O valor {consulta} está na lista!")
-else:
-    print("TEM NADA AQUI NAO")
+    if opcao == 2:
+        tirar = input("Informe um valor para ser removido da lista: ")
+        remover(tirar, lista)
 
-print(f"A lista")
+    if opcao == 3:
+        vc = input("Informe o valor que deseja consultar: ") # VC = Valor Consulta
+        consultar(vc, lista)
+
+print(lista)
