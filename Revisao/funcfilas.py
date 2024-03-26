@@ -1,3 +1,9 @@
-def insere(tam):
+def inserir(tam, lis):
     for i in range(tam):
-    lista.append(input("Informe um valor para adicionar a lista: "))
+        lis.append(input("Informe um valor para adicionar a lista: "))
+
+def remover(r, lis):
+    lis.remove(r)
+
+def consultar():
+    

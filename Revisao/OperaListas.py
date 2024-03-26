@@ -1,19 +1,15 @@
-from 'func-filas' import *
+from funcfilas import *
 
 lista = []
 n = int(input("Quantos valores terá a lista? "))
+inserir(n, lista)
 
-for i in range(n):
-    lista.append(input("Informe um valor para adicionar a lista: "))
+tirar = input("Informe um valor para ser removido da lista: ")
+remover(tirar, lista)
 
-print(lista)
 
-remove = input("Informe um valor para ser removido da lista: ")
-lista.remove(remove)
 
-print(lista)
-
-consulta = input("Informe o valor que deseja consultar: ")
+VC = input("Informe o valor que deseja consultar: ") # VC = Valor Consulta
 if consulta in lista:
     print(f"O valor {consulta} está na lista!")
 else:
