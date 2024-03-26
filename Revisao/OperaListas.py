@@ -1,3 +1,5 @@
+from 'func-filas' import *
+
 lista = []
 n = int(input("Quantos valores terá a lista? "))
 
