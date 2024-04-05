@@ -13,7 +13,6 @@ while opcao != 0:
 
 
     if opcao == 1:
-        
         inserir(n, lista)
 
     if opcao == 2:

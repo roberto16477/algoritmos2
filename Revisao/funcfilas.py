@@ -7,7 +7,7 @@ def inserir(tam, lis):
     print(lis)
 
 def remover(lis):
-        if ((len(lis) > 0) and (len(lis) < 5)):
+        if len(lis) != 0:
             r = lis.pop()
             print(f"o valor {r} foi removido da lista")
             print("Lista atual: ", lis)
