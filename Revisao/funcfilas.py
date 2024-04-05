@@ -6,12 +6,13 @@ def inserir(tam, lis):
             lis.append(input("Informe um valor para adicionar a lista: "))
     print(lis)
 
-def remover(r, lis):
-    if r in lis:
-        lis.remove(r)
-        print(f"o valor {r} foi removido da lista")
-    else:
-        print(f"O valor {r} não existe na lista")
+def remover(lis):
+        if ((len(lis) > 0) and (len(lis) < 5)):
+            r = lis.pop()
+            print(f"o valor {r} foi removido da lista")
+            print("Lista atual: ", lis)
+        else:
+            print("A fila está vazia")
 
 def consultar(val, lis):
     if val in lis:

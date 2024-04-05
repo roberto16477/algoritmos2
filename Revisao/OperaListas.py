@@ -2,8 +2,7 @@ from funcfilas import *
 
 opcao = -1
 lista = []
-n = int(input("Quantos valores terá a lista? "))
-inserir(n, lista)
+n = 5
 
 while opcao != 0:
     print("\nInforme 0 para sair")
@@ -18,8 +17,7 @@ while opcao != 0:
         inserir(n, lista)
 
     if opcao == 2:
-        tirar = input("Informe um valor para ser removido da lista: ")
-        remover(tirar, lista)
+        remover(lista)
 
     if opcao == 3:
         vc = input("Informe o valor que deseja consultar: ") # VC = Valor Consulta
