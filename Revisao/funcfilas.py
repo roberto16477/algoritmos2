@@ -2,13 +2,13 @@ def inserir(tam, lis):
     if tam == len(lis):
         print("A fila está cheia!")
     else:
-        for i in range(tam):
             lis.append(input("Informe um valor para adicionar a lista: "))
     print(lis)
 
 def remover(lis):
         if len(lis) != 0:
-            r = lis.pop()
+            r = lis[0]
+            del(lis[0])
             print(f"o valor {r} foi removido da lista")
             print("Lista atual: ", lis)
         else:
