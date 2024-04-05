@@ -19,3 +19,6 @@ def consultar(val, lis):
         print(f"O valor {val} está na lista!")
     else:
         print(f"Não existe '{val}' na lista")
+
+def tamanho(lis):
+    print("o tamanho da fila é: ", len(lis))
