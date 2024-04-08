@@ -7,16 +7,23 @@ def insere(arr):
     for i in range(len(arr)):
         if arr[i] == '':
             arr[i] = elemento
+            re = re+1
             break
 
 def remover(arr):
-       for i in range(len(arr)):
-        if arr[i] != '':
-            arr[i] = ''
-            break
+       if frente == re:
+           print("A fila está vazia")
+       else:
+            for i in range(len(arr)):
+                if arr[i] != '':
+                    arr[i] = ''
+                    frente = frente+1
+                    break
 
 n = 5
 fila = []
+frente = 0
+re = 0
 opcao = -1
 inicia(n, fila)
 
@@ -29,7 +36,9 @@ while opcao != 0:
     if opcao == 1:
         insere(fila)
         print(fila)
+        print(f"frente: {frente}, re: {re}")
 
     if opcao == 2:
         remover(fila)
         print(fila)
+        print(f"frente: {frente}, re: {re}")
