@@ -3,22 +3,26 @@ def inicia(tam, arr):
         arr.append('')
 
 def insere(arr, r):
+    global re
     elemento = input("Informe um elemento para adicionar a fila")
     for i in range(len(arr)):
-        if arr[i] == '':
+        if arr[r] == '':
+            arr[r] = elemento
             r = r+1
             re = r
-            arr[i] = elemento
-            print(r)
+            if re == len(arr):
+                re = 0
+                print(re)
             break
 
 def remover(arr, f, r):
-    if r == f:
+    global frente
+    if (r == f) and arr[f] == '':
             print("A fila está vazia")
     else:
         for i in range(len(arr)):
-            if arr[i] != '':
-                arr[i] = ''
+            if arr[f] != '':
+                arr[f] = ''
                 frente += 1
                 break
 
