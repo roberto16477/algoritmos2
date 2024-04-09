@@ -1,3 +1,4 @@
+#Roberto Carlos da Silva Junior  BSI23
 def inicia(tam, arr):
     for i in range(tam):
         arr.append('')
