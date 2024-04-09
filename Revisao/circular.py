@@ -3,17 +3,25 @@ def inicia(tam, arr):
         arr.append('')
 
 def insere(arr, r):
-    global re
+    global re, volta
     elemento = input("Informe um elemento para adicionar a fila")
     for i in range(len(arr)):
-        if arr[r] == '':
-            arr[r] = elemento
-            r = r+1
-            re = r
-            if re == len(arr):
-                re = 0
-                print(re)
-            break
+        if ((volta < 1) or ((arr[r] == '')and(arr[r+1] == ''))or(arr[r] != '')):
+            if arr[r] == '':
+                arr[r] = elemento
+                r = r+1
+                re = r
+                if re == len(arr):
+                    re = 0
+                    volta += 1
+                    print(re)
+                break
+            else:
+                 print("\nA fila está verdadeiramente cheia")
+                 break
+        else:
+             print("Falso Overflow")
+             break
 
 def remover(arr, f, r):
     global frente
@@ -26,14 +34,15 @@ def remover(arr, f, r):
                 frente += 1
                 if frente == len(arr):
                     frente = 0
-                print(frente)
                 break
+                    
 
 n = 5
 fila = []
 frente = 0
 re = 0
 opcao = -1
+volta = 0
 inicia(n, fila)
 
 while opcao != 0:
