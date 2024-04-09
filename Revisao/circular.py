@@ -6,7 +6,7 @@ def insere(arr, r):
     global re, volta
     elemento = input("Informe um elemento para adicionar a fila")
     for i in range(len(arr)):
-        if ((volta < 1) or ((arr[r] == '')and(arr[r+1] == ''))or(arr[r] != '')):
+        if ((volta < 1) or ((arr[r] == '')and(arr[(r+1) % len(arr)] == ''))or(arr[r] != '')):
             if arr[r] == '':
                 arr[r] = elemento
                 r = r+1
