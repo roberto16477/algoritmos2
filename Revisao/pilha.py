@@ -1,27 +1,27 @@
 # Estrutura de dado em forma de Pilha.
-stack =  []
+pilha =  []
 TAM = 5
 
 
 #Insere um novo elemento na pilha de dados.
 def NovoElemento():
     x = int(input("Digite um elemento para a pilha:  "))
-    if len(stack) < TAM:
-        stack.append(x)
+    if len(pilha) < TAM:
+        pilha.append(x)
         print("Elemento incluido com sucesso!")
     else:
         print("Elemento não poderá ser inserido! Overflow!")
 
 #Apaga um elemento na pilha de dados.
 def ApagaElemento():
-    del stack[( len (stack) - 1)]
+    del pilha[( len (pilha) - 1)]
     print("Elemento excluido com sucesso!")
 
 #Consulta se um elemento está na pilha.
 def ConsultaElemento(a:int):
-    x = len(stack)-1 
+    x = len(pilha)-1 
     while(x >= 0):
-        if(stack[x] == a):
+        if(pilha[x] == a):
            return x
         x = x - 1
     return x
@@ -37,16 +37,16 @@ while True:
     elif Opcao == "1": 
         NovoElemento()
     elif Opcao == "2": 
-        print (stack)
+        print (pilha)
         print()
     elif Opcao == "3":
-        if len(stack) == 0:
+        if len(pilha) == 0:
              print ("Underflow.... Pilha Vazia\n")
         else:
-            print (f"O elemento que será apagado da pilha é o elemento {stack [len(stack) -1]}")
+            print (f"O elemento que será apagado da pilha é o elemento {pilha [len(pilha) -1]}")
             ApagaElemento()
             print()
-            print (stack)
+            print (pilha)
             print()
     elif Opcao == "4":
         procura = int(input("Informe o elemento que deseja verificar se está na pilha:  "))
