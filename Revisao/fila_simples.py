@@ -9,6 +9,7 @@ def insere(tam, arr):
             arr[i] = val
             break
 
+
 '''def insere(l):
     val = input("Informe o valor de deseja inserir: ")
     l.append(val)'''
