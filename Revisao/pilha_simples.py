@@ -2,34 +2,28 @@ def inicia(tam, arr):
     for i in range(tam):
         arr.append('')
 
-def insere(tam, arr, r):
-    global re
+def insere(tam, arr, t):
+    global topo
     val = input("Informe um valor para inserir: ")
-    if r < tam:
-        arr[r] = val
-        re = r+1
+    if t < tam:
+        arr[t] = val
+        topo = t+1
     else:
-        if arr[0] != '':
-            print("A fila está cheia! Overflow!")
-        else:
-            print("Falso Overflow!")
+        print("A pilha está cheia! Overflow!")
 
-def tira(tam, arr, f):
-    global frente, re
-    if arr[f] != '':
-        arr[f] = ''
-        frente = f+1
-        #if (frente == re)and(frente != 0):
-        if frente == tam:
-            frente = 0
-            re = 0
-    else:
-        print("A fila já está vazia! Underflow!")
+def tira(tam, arr, t):
+    global topo
+    for i in range(tam):
+        if arr[(tam-1)-i] != '':
+            arr[(tam-1)-i] = ''
+            t -= 1
+            topo = t
+            break
 
 fila = []
 n = 5
-frente = 0
-re = 0
+base = 0
+topo = 0
 inicia(n, fila)
 opcao = -1
 
@@ -40,11 +34,11 @@ while opcao != 0:
     opcao = int(input("Informe a opção que deseja: "))
 
     if opcao == 1:
-        insere(n, fila, re)
+        insere(n, fila, topo)
         print(f"\n {fila}")
-        print(f"Frente: {frente} Ré: {re}")
+        print(f"base: {base} Topo: {topo}")
 
     if opcao == 2:
-        tira(n, fila, frente)
+        tira(n, fila, base)
         print(fila)
-        print(f"Frente: {frente} Ré: {re}")
+        print(f"base: {base} Topo: {topo}")
